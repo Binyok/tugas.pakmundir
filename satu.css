@@ -1,0 +1,300 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Ganti dengan font modern */
+    background-color: #f4f7fc;
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1d3c6a;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-left: 12px;
+    font-family: 'Roboto Slab', serif;
+    color: #ffb547; /* Warna teks */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: blink 1.5s infinite; /* Animasi berkedip */
+}
+
+.title:hover {
+    color: #ff7f32; /* Warna berubah saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
+    transition: all 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #ffb547;
+    transform: translateY(-2px);
+}
+
+/* Search Bar Styles */
+.search {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    width: 100%;
+    width: 50rem;
+}
+
+.search-input {
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    width: 100%;
+    width: 60rem;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #1d3c6a;
+    box-shadow: 0 0 15px rgba(29, 60, 106, 0.2);
+}
+
+.search-input::placeholder {
+    color: #bbb;
+}
+
+.search-input:focus::placeholder {
+    color: transparent;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 270px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 900;
+    transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+    color: #1d3c6a;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Improved Shoe Link Styles */
+#brand-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shoe-link {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    background-color: #f0faff;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.shoe-link:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Login Form Styles */
+.login-form {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1d3c6a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffb547;
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 300px;
+    padding: 20px;
+    margin-top: 90px;
+    transition: margin-left 0.3s ease;
+}
+
+.namasepatu-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.namasepatu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 520px;
+}
+
+.namasepatu-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.namasepatu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lihat {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-lihat:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .namasepatu-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .namasepatu-card {
+        flex: 1 1 100%;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+}
+
+/* Animasi untuk Nama Toko */
+@keyframes slideInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi untuk Teks Berkedip */
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1; /* Teks terlihat */
+    }
+    25%, 75% {
+        opacity: 0; /* Teks menghilang */
+    }
+}

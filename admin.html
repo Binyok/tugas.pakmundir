@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/534c999894.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <div id="header">
+            <img class="logo" src="logo rpl.png" alt="Logo">
+                <h1>Rekayasa Perangkat Lunak</h1>
+            <div class="header-content">
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Daftar</a></li>
+                </ul> type="button">Search</button>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Search">
+                    <button id="wrapper">
+                </div>
+            </div>
+        </div>
+
+        <div id="inner">
+            <div id="sidebar">
+                <h2 id="toggle-animals"><i class="fa-solid fa-bars"></i> Nama Hewan</h2>
+                <div id="animal-buttons">
+                    <button type="button" data-image="images/tiger.jpg">Tiger</button>
+                    <button type="button" data-image="images/lion.jpg">Lion</button>
+                    <button type="button" data-image="images/bear.jpg">Bear</button>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" id="logout-button">Logout</button>
+                </div>
+            </div>
+
+            <div id="content">
+                <img id="animal-image" src="" alt="Animal Image" style="display:none;">
+            </div>
+        </div>
+
+        <div id="footer">
+            Made by Abimanyu P.W.D (gpt)
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('#animal-buttons button');
+            const image = document.getElementById('animal-image');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const imageUrl = this.getAttribute('data-image');
+                    image.src = imageUrl;
+                    image.style.display = 'block'; // Tampilkan gambar
+                });
+            });
+
+            document.getElementById('logout-button').addEventListener('click', function() {
+                window.location.href = 'logout.php';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+    /* Global settings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    /* Header styling */
+    #header {
+        position: relative; /* Position relative for positioning child elements */
+        background: radial-gradient(circle, purple, #3e3636);
+        padding: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space out logo/title and content */
+    }
+
+    /* Logo and title styling */
+    .header-logo-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #header img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        margin: 0;
+        animation: slideIn 2s ease-in-out, colorChange 5s infinite alternate ease-in-out;
+        line-height: 1.2;
+        font-size: xx-large;
+    }
+
+    /* Header content and navigation */
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: x-large;
+    }
+
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .nav-menu li {
+        display: inline;
+    }
+
+    .nav-menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-menu a:hover {
+        text-decoration: underline;
+    }
+
+    /* Search container styling */
+    /* Search container styling */
+    .search-container {
+        position: absolute; /* Position absolutely within the header */
+        bottom: 40px; /* Moves the search container slightly up from the bottom edge */
+        right: 10px; /* Adjust this value as needed */
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .search-container input[type="text"] {
+        padding: 5px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .search-container button {
+        padding: 5px 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Main layout */
+    #inner {
+        display: flex;
+        flex: 1;
+        height: calc(100vh - 80px);
+    }
+
+   /* Sidebar styling */
+#sidebar {
+    width: 250px;
+    background: radial-gradient(circle, rgb(91, 34, 248), #0073ff);
+    padding: 20px 30px; /* Tambahkan padding pada sidebar */
+    color: white;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+/* Form styling */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-form label {
+    font-weight: bold;
+}
+
+#login-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#login-form button {
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    color: #007BFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px; /* Perbaiki posisi tombol logout */
+}
+
+#logout-button {
+    background-color: #dc3545;
+    color: white;
+    transition: background-color 0.3s; /* Tambahkan efek hover pada tombol */
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    color: #007BFF;
+}
+
+.product p {
+    color: #666;
+}
+
+.product button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #218838;
+}
+.product button:hover {
+    background-color: #218838;
+}
